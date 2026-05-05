@@ -1,0 +1,21 @@
+name: aura_receiver
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - tqdm
+  - networkx
+  - pytorch
+  - cpuonly
+  - pip:
+      # Add project-specific packages here if needed.
+      # For GPU installation, remove `cpuonly` above and install the CUDA-enabled
+      # PyTorch build that matches your local CUDA version.

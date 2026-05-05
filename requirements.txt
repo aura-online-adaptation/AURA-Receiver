@@ -1,0 +1,14 @@
+# Core scientific stack
+numpy
+scipy
+pandas
+matplotlib
+tqdm
+networkx
+
+# PyTorch
+# CPU/default installation:
+torch
+
+# If you need a CUDA-enabled PyTorch build, install it from the official
+# PyTorch instructions for your CUDA version instead of relying on this line.

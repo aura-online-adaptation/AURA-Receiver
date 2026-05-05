@@ -1,0 +1,73 @@
+{
+  "base_config": {
+  "model": {
+    "type": "deepsic",
+    "num_layers": 4,
+    "hidden_dim": 32,
+    "init_param_cov": 0.1,
+    "Pulse": true,
+    "learned matrix" : false,
+    "learned param": false,
+    "OU": false,
+    "F": true ,
+    "projection_mode": "single_proj",
+    "F_style": "diag",
+    "block_update" : "single_block"
+  },
+  "channel": {
+    "modulation": "QPSK",
+    "snr": 8,
+    "num_users": 3,
+    "num_antennas": 5,
+    "linear_channel": true,
+    "channel_path": "C:/Users/owner/Desktop/adaptive-deep-receiver-Torch/experiments/data/QuaDRiGa_3GPP_LOS/eval/channel_coefficients.mat"
+  },
+  "experiment": {
+    "sync_frames": 4,
+    "track_frames": 96,
+    "symbols_per_frame": 64,
+    "pilot_per_frame": 6,
+    "test_dim": 1000,
+    "seed": 52
+  },
+  "algorithm": {
+    "method": "bong",
+    "covariance_type": "full",
+    "reparameterized": false,
+    "dynamics_decay": 0.999,
+    "obs_cov_scale": 0.1,
+    "process_noise": 0.001,
+    "num_samples": 1,
+    "learning_rate": 0.1,
+    "dlr_rank": 10
+  },
+  "projection": {
+    "optimizer": {
+      "projection_lr": 1e-5,
+      "projection_lr_dnn": 1e-3,
+      "projection_lr_affine": 1e-4,
+      "F_lr": 1e-7,
+      "Q_lr": 1e-7,
+      "beta_lr": 1e-7
+    },
+    "proj_type" : "DNN",
+    "num_wanted" : 700,
+    "frames" : 10,
+    "symbols per frame": 10,
+    "test symbols" : 60,
+    "learning proj" : true,
+    "train_per_snr" : false,
+    "save_dir": "experiments/data/Learned_matrices",
+    "load_dir": "experiments/data/Learned_matrices/deepsic_8snr_affine_300x10_wanted868_F_diag_covfull",
+    "sync frames" : 4,
+    "sync symbols": 64,
+    "cmp_sqz" : false,
+    "sqz_factor" : 10
+  }
+},
+
+  "sweep": {
+    "projection.symbols per frame": [10],
+    "projection.num_wanted" : [400]
+  }
+}

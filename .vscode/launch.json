@@ -1,0 +1,76 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Receiver - single_run",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/framework/single_run.py",
+            "args": [
+                "--config",
+                "${workspaceFolder}/experiments/framework/single_config.json"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "multi_runner",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/framework/multi_runner.py",
+            "args": [
+                "--config",
+                "${workspaceFolder}/experiments/framework/sweep_config.json"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/experiments/framework"
+            }
+        },
+        {
+            "name": "Proj_learn",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/framework/projection_learning.py",
+            "args": [
+                "--config",
+                "${workspaceFolder}/experiments/framework/proj_config.json"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/experiments/framework"
+            }
+        },
+        {
+            "name": "Plot maker",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/framework/plot_maker.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/experiments/framework"
+            }
+        },
+        {
+            "name": "single_run",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/experiments/framework/single_run.py",
+            "args": [
+                "--config",
+                "${workspaceFolder}/experiments/framework/single_config.json"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/experiments/framework"
+            }
+        }
+    ]
+}
