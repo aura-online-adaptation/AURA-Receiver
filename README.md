@@ -1,12 +1,9 @@
 ﻿# AURA Neural Receiver
 
-Official implementation of: Online Learning via Learned Latent Bayesian Tracking
+This repository accompanies the paper **“Online Learning via Learned Latent Bayesian Tracking”** and contains the implementation of the wireless neural receiver experiments.
 
-**Online Learning via Learned Latent Bayesian Tracking**
-Repository: https://github.com/aura-online-adaptation/AURA-Neural-Receiver
-
-This repository contains the wireless neural receiver experiments for **AURA**.  
-The image Test-Time Adaptation codebase is maintained separately: https://github.com/aura-online-adaptation/AURA-Image-Adaptation
+The image adaptation experiments are maintained in a separate repository:  
+https://github.com/aura-online-adaptation/AURA-Image-Adaptation
 
 ---
 
