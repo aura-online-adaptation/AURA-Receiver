@@ -366,7 +366,6 @@ This asks the code to run latent-space `F` dynamics without loading the learned 
 
 ## Typical Offline Learning Rates
 
-## Typical Offline Learning Rates
 
 The following values are typical starting points for offline projection learning:
 
